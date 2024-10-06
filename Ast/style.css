@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=SUSE:wght@100..800&display=swap');
+
+body {
+    font-family: "Geologica", sans-serif;
+    background-color: #222222;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 12px;
+    box-sizing: border-box;
+
+    background: #1d1d1d;
+    background-image: linear-gradient(#ffffff08 .1em, transparent .1em), linear-gradient(90deg, #ffffff08 .1em, transparent .1em);
+    background-size: 4em 4em;
+}
+
+.imgg {
+    width: 650px;
+    border-radius: 4px;
+}
+
+.ctrlbtnplyr {
+    padding: 10px;
+    width: 70px;
+    margin: 10px;
+}
+
+#nmrimgn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(255, 255, 255); 
+    font-size: 20px; 
+    text-decoration: none;
+}
+
+.btndd1 {
+    text-align: center;
+    width: 125px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 4px;
+    outline: none;
+    color: white;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    background-color: #1d1d1dcd;
+    border: 2px solid white;
+}
+
+.ctrlbtnplyr {
+    text-align: center;
+    width: 125px;
+    padding: 15px;
+    margin: 10px;
+    margin-top: 30px;
+    border-radius: 4px;
+    outline: none;
+    color: white;
+    border: none;
+    background-color: blue;
+    background-color: #1d1d1dcd;
+    border: 2px solid white;
+}
+
+.rprtbtn {
+    text-align: center;
+    width: 125px;
+    padding: 15px;
+    margin: 10px;
+    margin-top: 0px;
+    border-radius: 4px;
+    outline: none;
+    color: white;
+    border: none;
+    background-color: blue;
+    background-color: #1d1d1dcd;
+    border: 2px solid white;
+}
+
+#report-select {
+    text-align: center;
+    width: 125px;
+    padding: 15px;
+    margin: 10px;
+    margin-top: -30px;
+    border-radius: 4px;
+    outline: none;
+    color: white;
+    border: none;
+    text-align: left;
+    background-color: blue;
+    background-color: #1d1d1dcd;
+    border: 2px solid white;
+}
+
+.xyzimg {
+    width: 20px;
+    opacity: 0;
+    cursor: default;
+}
+
+#resultreport {
+    margin-top: -200px;
+    margin-bottom: 180px;
+}
+
+#author {
+    margin-top: 60px;
+    font-size: 10px;
+}
+
+.linkauthor {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.193); 
+    font-size: 8px; 
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .imgg {
+        width: 90%;
+        border-radius: 4px;
+    }
+
+    #resultreport {
+        margin-top: -90px;
+        margin-bottom: 70px;
+        font-size: 16px;
+    }
+    #nmrimgn {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+        justify-content: center;
+        color: rgb(255, 255, 255); 
+        font-size: 16px; 
+        text-decoration: none;
+    }
+}
