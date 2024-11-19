@@ -10,20 +10,12 @@
 </head>
 <body>
     <center>
-        <h1 id="ttlwb">DC Finder</h1>
-
-        <br>
-
-        <div id="dis-d-1">
-            <button id="play-btn" onclick="playGms()" class="btndd1">Play</button>
-            <button id="opt-btn" class="btndd1">Option</button>
-        </div>
-  
+        <h1 id="ttlwb">DC FINDER</h1>
         <div id="img-display" style="display: none;">
             <img id="gimage" alt="Image | YT: Dyn Crazy" class="imgg">
         </div>
 
-        <p id="resultreport" style="display: none;">Anomali tidak ditemukan!</p>
+        <p id="resultreport">Anomali tidak ditemukan!</p>
 
         <div id="ctrl-player" style="display: none;">
             <button id="kiriimg-btn" onclick="kiriBtn()" class="ctrlbtnplyr">Kiri</button>
@@ -37,16 +29,23 @@
         <option value="extra">Objek Bertambah</option>
         <option value="missing">Objek Hilang</option>
         <option value="movement">Objek Berpindah (Posisi berubah)</option>
-        <option value="change">Objek Berubah</option>
+        <option value="change">Objek Berubah (Diganti)</option>
         <option value="size">Objek Ukuran Berbeda</option>
         <option value="intruder">Intruder</option>
         </select>
  
-        <button onclick="checkReport()" class="rprtbtn">Report</button>
+        <button onclick="checkReport()" class="rprtbtn" id="rptbtn">Report</button>
 
         </div>
 
+        <div id="dis-d-1">
+            <button id="play-btn" onclick="playGms()" class="btndd1">Play</button>
+            <button id="opt-btn" class="btndd1">Option</button>
+        </div>
+
         <div id="loadImgf" style="cursor: default;">
+            <img src="Img/anomalifix.jpg" alt="Image" class="xyzimg">
+
             <img src="Img/r1_extra_1.jpg" alt="Image" class="xyzimg">
             <img src="Img/r1_extra_2.jpg" alt="Image" class="xyzimg">
             <img src="Img/r1_extra_3.jpg" alt="Image" class="xyzimg">
@@ -102,8 +101,18 @@
             <img src="Img/r6_size_1.jpg" alt="Image" class="xyzimg">
         </div>
 
-        <a href="https://www.youtube.com/@DynCrazy" target="_blank" class="linkauthor">Web by Dyn Crazy</a>
+        <div id="loading">Loading...</div>
+
+        <a href="https://www.youtube.com/@DynCrazy" target="_blank" class="linkauthor" style="display: none;">Web by Dyn Crazy</a>
     </center>
+
+    <audio id="musicInGame" loop>
+            <source src="Audio/pvzday.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="audioClick">
+        <source src="Audio/click.mp3" type="audio/mpeg">
+    </audio>
 
     <script src="Ast/script.js"></script>
 </body>
